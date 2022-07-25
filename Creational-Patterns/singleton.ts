@@ -1,7 +1,7 @@
 /**
  * Singleton class defines getInstance method, which allows client to acces the unique singleton instance
  */
-class Singleton {
+ class Singleton {
 
     private static instance: Singleton;
     /**
@@ -33,13 +33,12 @@ class Singleton {
  */
 
 function clietCode() {
-    const s1 = new Singleton.getInstance();
-    const s2 = new Singleton.getInstance();
+    const s1 = Singleton.getInstance();
+    const s2 = Singleton.getInstance();
 
     if ( s1=== s2) {
         console.log('There is only one instance');
     } else {
         console.log('There are two different Singleton instance');
     }
-
 }
