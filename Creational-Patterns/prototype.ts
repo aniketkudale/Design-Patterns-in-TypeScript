@@ -56,3 +56,5 @@ function clientCode() {
         console.log('Component with back reference is linked to the clone. Yay!');
     }
 }
+
+clientCode();
